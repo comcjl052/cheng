@@ -1,0 +1,48 @@
+@import "../../../lib/base/css/globalStyle";
+.pollMsg{
+	padding: 0 pxToRem(10px);
+	background: #fff;
+	position: relative;
+	.shop_num{
+		width: pxToRem(18px);
+		height: pxToRem(18px);
+		line-height: pxToRem(18px);
+		border-radius: 50%;
+		background: #f20;
+		display: inline-block;
+		position: absolute;
+		top: pxToRem(5px);
+		left: pxToRem(25px);
+		color: #fff;
+		font-size: pxToRem(10px);
+		text-align: center;
+	}
+	&.joinImg{
+		padding-left: pxToRem(48px);
+	}
+	&.base-before-iconRight{
+		padding-right: pxToRem(20px);
+	}
+	.txtImg{
+		width: pxToRem(18px);
+		height: pxToRem(18px);
+		position: absolute;
+		left: pxToRem(10px);
+		top: 50%;
+	}
+	.txtWrap{
+		@extend .display-flex;
+		@extend .flex-between;
+		@extend .flex-vc;
+		padding: pxToRem(13px) 0;
+		font-size: pxToRem(11px);
+		.txtName{
+			color: #666;
+		}
+		.txtCont{
+			padding-right: pxToRem(5px);
+			box-sizing: border-box;
+			color: #0179EA;
+		}
+	}
+}

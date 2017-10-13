@@ -1,0 +1,14 @@
+@import "../../../lib/base/css/globalStyle";
+.disCont{
+	padding: pxToRem(10px);
+	@extend .display-flex; 
+	@extend .flex-vc;
+	@extend .flex-between;
+	font-size: pxToRem(11px);
+	.diSpan{
+		color: #999;
+		em{
+			color: #000;
+		}
+	} 
+}			

@@ -1,0 +1,34 @@
+@import "../../../lib/base/css/globalStyle";
+.fixedMass{
+	width: 100%;
+	padding: pxToRem(8px) pxToRem(10px);
+	background: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	font-size: pxToRem(11px);
+	@extend .display-flex; 
+	@extend .flex-vc;
+	@extend .flex-between;
+	.rightSend{
+		color: #999;
+		em{
+			margin: 0 pxToRem(3px);
+			color: $mainColor;
+		}
+	}
+	.send{
+		margin-left: pxToRem(10px);
+		padding: pxToRem(3px) pxToRem(10px); 
+		background: $mainColor;
+		border-color: $mainColor;
+		vertical-align: middle;
+		font-size: pxToRem(11px);
+		color: #fff;
+		&.disabled{
+			background: #999;
+			border-color: #999;
+		}
+	}
+}

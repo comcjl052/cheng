@@ -1,0 +1,28 @@
+
+@import "../../../lib/base/css/globalStyle";
+.search_wrap{
+	padding: pxToRem(8px) pxToRem(10px);
+	background: #fff;
+	position: relative;
+	border-top: 1px solid #f5f5f5;
+	position: relative;
+	img{
+		position: absolute;
+		width: pxToRem(20px);
+		height: pxToRem(20px);
+		top: pxToRem(13px);
+		left: pxToRem(20px);
+	}
+	input{
+		padding-left: pxToRem(40px);
+		width: 100%;
+		height: pxToRem(30px);
+		line-height: pxToRem(30px);
+		box-sizing: border-box;
+		background: #EEEEEE ;
+		font-size: pxToRem(11px);
+		&::-webkit-input-placeholder{
+			font-size: pxToRem(11px);
+		}
+	}
+}

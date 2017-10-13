@@ -1,0 +1,22 @@
+@import "../../../lib/base/css/globalStyle";
+.msg-mass{
+	padding: pxToRem(10px);
+	.mass-cont{
+		padding: pxToRem(10px);
+		border-radius: pxToRem(3px);
+		background: #fff;
+		font-size: pxToRem(10px);
+		.to{
+			margin-bottom: pxToRem(5px);
+			font-size: pxToRem(11px);
+			color: $mainColor;
+		}
+		.toUser{
+			color: #999;
+			span{
+				margin-bottom: pxToRem(3px);
+				display: inline-block; 
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+
+@import "../../../lib/base/css/globalStyle";
+.fansList{
+	.sortItem{
+		padding: pxToRem(5px) pxToRem(10px);
+		span{
+			// font-weight: 600;
+			color: #666;
+		}
+	}
+	.listItem{
+		padding: pxToRem(10px);
+		width: 100%;
+		display: table;
+		border-top: 1px solid #f5f5f5;
+		background: #fff;
+		box-sizing: border-box;
+		.item_img,.item_name{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.item_img{
+			width: pxToRem(35px);
+			height: pxToRem(35px);
+			.item_use{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.item_name{
+			.name{
+				margin-left: pxToRem(5px);
+				font-size: pxToRem(13px);
+				color: #666;
+				em{
+					margin-left: pxToRem(5px);
+					padding: pxToRem(1px) pxToRem(10px);
+					display: inline-block;
+					background: #FD6573;
+					font-size: pxToRem(10px);
+					color: #fff;
+				}
+				.base-fr{
+					font-size: pxToRem(10px);
+					color: #999;
+				}
+			}
+			p{
+				margin-left: pxToRem(5px);
+				line-height: pxToRem(20px);
+				color: #999;
+			}
+		}
+	}
+}

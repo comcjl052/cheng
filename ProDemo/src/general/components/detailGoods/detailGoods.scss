@@ -1,0 +1,39 @@
+@import "../../../lib/base/css/globalStyle";
+.good_list{
+	padding: 0 pxToRem(10px);
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	.goodItem{
+		padding: pxToRem(10px) pxToRem(10px) pxToRem(10px) pxToRem(65px);
+		border-bottom: 1px solid #f1f1f1;
+		position: relative;
+		&:last-of-type{
+			border-bottom: 0;
+		}
+		.goodImg{
+			width: pxToRem(55px);
+			height: pxToRem(55px);
+			position: absolute;
+			left: 0;
+			top: 50%;
+		}
+		.goodInfo{
+			.goodTit{
+				font-size: pxToRem(12px);
+			}
+			.goodPrice{
+				margin: pxToRem(5px) 0;
+				font-size: pxToRem(11px);
+				color: #f20;
+				.goodQuan{
+					margin-left: pxToRem(10px);
+					color: $mainColor;
+				}
+			}
+			.goodNum{
+				font-size: pxToRem(10px);
+				color: #999;
+			}
+		}
+	}
+}

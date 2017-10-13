@@ -1,0 +1,88 @@
+@import "../../../lib/base/css/globalStyle";
+.labelInput_,.labelSelect,.labelRadio{
+	padding: 0 pxToRem(10px);
+	background: #fff;
+	position: relative;
+	&.joinImg{
+		padding-left: pxToRem(38px);
+	}
+	&.base-before-iconRight{
+		padding-right: pxToRem(20px);
+	}
+	.txtImg{
+		width: pxToRem(18px);
+		height: pxToRem(18px);
+		position: absolute;
+		left: pxToRem(10px);
+		top: 50%;
+	}
+	.txtWrap{
+		@extend .display-flex; 
+		@extend .flex-vc;
+		&.alignRight{
+			@extend .flex-between;
+		}
+		padding: pxToRem(8px) 0;
+		font-size: pxToRem(11px); 
+		.txtName{
+			color: #666;
+		}
+		.contWrap{ 
+			min-width: 50%;
+			height: pxToRem(25px);
+			line-height: pxToRem(25px);
+			position: relative;
+			text-align: right;
+			span{
+				display: inline-block;
+				height: pxToRem(25px);
+				line-height: pxToRem(25px);
+			}
+			input[type='text'],
+			input[type='search'],
+			input[type='password'],
+			input[type='datetime'],
+			input[type='datetime-local'],
+			input[type='date'],
+			input[type='month'],
+			input[type='time'],
+			input[type='week'],
+			input[type='number'],
+			input[type='email'],
+			input[type='url'],
+			input[type='tel'],
+			input[type='color']{
+				padding: 0;  
+				height: pxToRem(25px);
+				line-height: pxToRem(25px); 
+				text-align: right;
+				font-size: pxToRem(11px);
+				color: #333;
+				opacity: 0;
+				position: absolute;
+				right: 0;
+				top: 50%; 
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+			}
+			select{
+				padding: 0;
+				height: pxToRem(25px);
+				border: 0;
+				font-size: pxToRem(11px);
+				opacity: 0;
+				position: absolute;
+				right: 0;
+				top: 50%; 
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+			}
+		}
+		.txtRadio{
+			display: inherit;
+			.radio{
+				margin-left: pxToRem(15px);
+			}
+		}
+	}
+}

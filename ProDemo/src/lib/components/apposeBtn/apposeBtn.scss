@@ -1,0 +1,18 @@
+@import '../../base/css/globalStyle';
+.apposeBtn,.fixedBtn{ 
+    overflow: hidden;
+    .leftBtn,.rightBtn{
+    	padding: pxToRem(11px) pxToRem(10px);
+        width: 50%; 
+        float: left;
+        box-sizing: border-box; 
+        font-size: pxToRem(12px);
+        @extend .display-flex;
+        @extend .flex-vc;
+        @extend .flex-centent;
+        img{
+        	margin-right: pxToRem(5px);
+        	width: pxToRem(18px); 
+        }
+    } 
+}

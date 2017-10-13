@@ -1,0 +1,36 @@
+@import "../../../lib/base/css/globalStyle";
+.orderRow{
+	padding: pxToRem(10px) pxToRem(10px) pxToRem(10px) pxToRem(35px);
+	position: relative;
+	font-size: pxToRem(11px);
+	color: #999;
+	&::after{
+		right: pxToRem(15px);
+	}
+	.orderIco{
+		width: pxToRem(18px);
+		position: absolute;
+		left: pxToRem(10px);
+		top: 50%;
+	}
+	.yjPrice{
+		margin: 0 pxToRem(5px);
+		color: #f20;
+	}
+	.fanName{
+		color: #1F8DFC;
+	}
+	.orderNum{
+		color: #333;
+	}
+	.orderType{
+		font-size: pxToRem(10px);
+		color: #999;
+		&.base-fr{
+			margin: pxToRem(1px) 0 0;
+			.yjPrice{
+				margin: 0;
+			}
+		}
+	}
+}

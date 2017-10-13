@@ -1,0 +1,35 @@
+@import "../../../lib/base/css/globalStyle";
+.labelTxt{
+	padding: 0 pxToRem(10px);
+	background: #fff;
+	position: relative;
+	&.joinImg{
+		padding-left: pxToRem(38px);
+	}
+	&.base-before-iconRight{
+		padding-right: pxToRem(20px);
+	}
+	.txtImg{
+		width: pxToRem(18px);
+		height: pxToRem(18px);
+		position: absolute;
+		left: pxToRem(10px);
+		top: 50%;
+	}
+	.txtWrap{
+		@extend .display-flex;		
+		@extend .flex-vc;
+		&.alignRight{
+			@extend .flex-between;
+		}
+		padding: pxToRem(13px) 0;
+		font-size: pxToRem(11px);
+		.txtName{
+			color: #666;
+		}
+		.txtCont{
+			max-width: 80%;
+			color: #333;
+		}
+	}
+}
