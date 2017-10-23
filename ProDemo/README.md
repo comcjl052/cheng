@@ -9,9 +9,7 @@
 
 安装：nodejs
 
-在项目根目录运行：
-
-<code>npm i -g</code>
+在项目根目录运行： <code>npm i -g</code>
 
 如果配置了淘宝镜像，可使用 <code>cnpm i -g</code>命令
 
